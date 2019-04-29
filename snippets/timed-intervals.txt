@@ -1,0 +1,47 @@
+# Trigger
+
+## Custom Trigger
+function()
+    local combatTime = GetTime() - aura_env.startTime
+    
+    return combatTime > 15 and combatTime < 20 or
+    combatTime > 195 and combatTime < 200 or
+    combatTime > 405 and combatTime < 410
+end
+
+
+## Custom Untrigger
+function()    
+    return true
+end
+
+
+## Duration Info
+function()
+    local combatTime = GetTime() - aura_env.startTime
+    local durStart
+    
+    if combatTime < 20 then
+        durStart = 15
+    elseif combatTime < 200 then
+        durStart = 195
+    elseif combatTime < 410 then
+        durStart = 405
+    end
+    
+    return 5, aura_env.startTime + durStart
+end
+
+
+# Actions
+
+## On Init
+aura_env.startTime = 0
+
+
+## Play Sound
+Air Horn
+
+
+# Export String (*Keattz Vectis Rally)
+!1AvBVjooq4FnN092wrO0tALU7Ka2WwUTn0ToDpPtvHysMK4RbBKTdT0pKF77y7esAH(YxwbcSgpZ4zEMxJ8IcJiRJiPMV4rn8GE4vcgxhrM6he6FTJM3mbxtypcrbJgerOv6cHCXgntWvOCi37wKLPaDuG5AEcE9ZutIquMkUNtUNTbIMGeQuAX6qu73SjLQHisvZ)TS6NMdrRq9L0(qeLMk12dIkoA1Z5AqMrtGBhNMUGRU9Fb6DJRKu1TxcPm6TedFQBhZKNlK8te55ORkw6eFIXYZyCMQWOZ90xzOJK1nuDMQXuAoHiGKUe4BpXAqHS1qD8Fvhpafefvlz55G0yXbwiUHG94UnqNEsHvvzzHwAN7FXvZU5c03QwbBbeWXRyperwoDmjCjjC81O8vgZISPKUd1hjfTdd4er8IiwHq9a0sDrNAUscw1qUY)IlAF6pTxWSkUfF)5FP(FQJDFkfj0Y64eX6v0oV7ZG9mYy8hQJpce8C5rRJyUS7IUtSSNQ))SoE4G6yDbW7XEZN9kYygEN1XauQGJQP3PQ(4BRRrEVpDnAqFDXtpMtlbDLKxhF2VFu8l(36JzoD8d4teHtxdnfUTzI)isdo0X7RQ)2gkJPOBESmbHSt8Nl2hFr5EDbnXOJkOji)6aElsT0vaJERUsHelGK76ADP2aLLZtBW2kEtjPgFhSBLPwNuiUFbw2PS)pgX8TGJ3Enjosq5fHuTScoW2T9Hcg(Q9EE12mhTX07RbZt7q1lv7PGZlcgpfOBEZdqel9E5QVqh5UK1dGiNQXyOFW0f3yMs168ngqblfAJDplczBZNYu)V1CmgnLVZnPAle6y7sbkEWh8gyhjyMSAMIgrMjzpwh)1kAk2cMwhhIV4DaSzmIpj6RnTLnJAuqz2XgfpfvcLXxBHLf3esM)j)isEP4(PIsH0nZX8DO93tT)oY8BJz41O1jlcdxCzptBwjnxz15fZdqDwaS8cmn6pgzCp2A3aJ(tHBh)0wuajcCABBIgxWTP2RrZ99ZDV5XVh(rjkfu72lPmmroPQuVZAKmEEjY36D6cwc(pEbZUVJJWeNWkZwnHDxBjMusvQdOc8eC9aCHdgwlp070r2u6Kd4Rsbl7zltCu6lTDXJuqH9qKM(gMnlqFJ1BHkuKUy6QMO0tI9Zd6c9Uc1vvATGVyliXIV9PlVzsr7(wMDX850vLqQ1OnU5N)p)IBM91lFWt3BvWMmLWZNp9l7txKqoA(olHLywT4HElfEplf7zyZL2NW52OCisktITjWwvybHXOi0YnfUt23mICnTSC3Eu4nDjLMLC3U9l5G43JcS9rGB5vXEanI8tBqRfD0F9lavRXcZVHfHmvDCZlA9KjnS3IoRAxYDMXUDUmz61((bUWHD)wbpJL7cMmogtuq7Z65AeC5ojdZCDK6b8yFft3Z5wm070HNEMNrDVPtZmzxCA53W3Y41bUwpyGA4jEdoXd1YwK4OHgUJ((p
